@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.non.twiliosmsaddon.web.test.screens.SmsTestScreen"
+        messagesPack="com.non.twiliosmsaddon.web.test.screens">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <vbox spacing="true">
+            <buttonsPanel>
+                <button id="testSMS"
+                        caption="Send Test SMS"
+                        invoke="onTestSMSClick"/>
+                <button id="register"
+                        caption="Register Number"
+                        invoke="onRegisterClick"/>
+            </buttonsPanel>
+            <textField id="phoneNumber"
+                       caption="Phone"/>
+            <textField id="message"
+                       caption="Message"/>
+        </vbox>
+    </layout>
+</window>
